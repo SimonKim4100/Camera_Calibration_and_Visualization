@@ -18,7 +18,6 @@ min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, c
                                                 scale_focal, extrinsics, board_width,
                                                 board_height, square_size, True)
 ```
-
   Keep the final parameter(patternCentric) as True.
     
 3. Visualize moving boards: Change `patternCentric` to False
