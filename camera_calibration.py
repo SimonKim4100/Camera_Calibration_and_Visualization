@@ -43,7 +43,7 @@ for idx, fname in enumerate(images):
 cv2.destroyAllWindows()
 
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
-# ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, imgpoints, img_size)
+# ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape[::-1], img_size)
 
 print("Camera matrix : \n")
 print(mtx)
