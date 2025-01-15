@@ -9,11 +9,11 @@ Referenced from OpenCV: https://github.com/opencv/opencv
 
 ## Features
 1. Manual calibration: You may check this by uncommenting:
-   `# ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape[::-1], img_size)`
+   ```# ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape[::-1], img_size)```
 2. Visualize moving cameras: From the following line:
-   `min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, cam_height,
+   ```min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, cam_height,
                                                 scale_focal, extrinsics, board_width,
-                                                board_height, square_size, True)`
+                                                board_height, square_size, True)```
    Keep the final parameter(patternCentric) as True
 3. Visualize moving boards: Change `patternCentric` to False
 
