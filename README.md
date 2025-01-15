@@ -17,7 +17,8 @@ ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape
 min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, cam_height,
                                                 scale_focal, extrinsics, board_width,
                                                 board_height, square_size, True)
-```<br>
+```
+<br>
 
     Keep the final parameter(patternCentric) as True.
     
