@@ -10,8 +10,9 @@ Referenced from OpenCV: https://github.com/opencv/opencv
 ## Features
 1. Manual calibration: You may check this by uncommenting:
 ```python
-ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape[::-1], img_size)```
-3. Visualize moving cameras: From the following line:
+ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape[::-1], img_size)
+```
+2. Visualize moving cameras: From the following line:
 ```python
 min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, cam_height,
                                                 scale_focal, extrinsics, board_width,
