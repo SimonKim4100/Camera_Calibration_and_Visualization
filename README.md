@@ -16,7 +16,8 @@ ret, mtx, dist, rvecs, tvecs = fun.custom_calibrate_camera(objpoints, gray.shape
 ```python
 min_values, max_values = show.draw_camera_boards(ax, camera_matrix, cam_width, cam_height,
                                                 scale_focal, extrinsics, board_width,
-                                                board_height, square_size, True)
+                                                board_height, square_size, True
+)
 ```
     Keep the final parameter(patternCentric) as True. <br>
 3. Visualize moving boards: Change `patternCentric` to False
